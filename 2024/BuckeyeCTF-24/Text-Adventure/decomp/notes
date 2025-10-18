@@ -1,0 +1,25 @@
+torch
+rope
+sword
+
+entry hall = torch
+crystal room = rope
+across river = sword
+key room = key
+
+path forward:
+begin:entry hall (torch) ->
+
+Bridge ->
+crystal room (take rope)
+
+stairwaybottom ->
+river ->
+across river(need rope) -> take sword
+
+spider hallway (need sword) ->
+keyroom (take key)
+
+stairway bottom ->
+sealed door (need key) ->
+end:dead end 

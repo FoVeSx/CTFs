@@ -1,0 +1,164 @@
+/lib64/ld-linux-x86-64.so.2
+libc.so.6
+gets
+strcpy
+exit
+readdir
+strncmp
+sendfile
+closedir
+strncpy
+puts
+realloc
+stdin
+printf
+strtol
+strlen
+strstr
+longjmp
+_setjmp
+memcpy
+malloc
+strcasecmp
+fdopendir
+fread
+close
+open
+strcmp
+__libc_start_main
+free
+__fxstat
+GLIBC_2.4
+GLIBC_2.14
+GLIBC_2.2.5
+__gmon_start__
+[]A\A]A^A_
+Forbidden
+HTTP/1.1 %d %s
+text/html
+Content-Type: %s
+<body>
+<style>code{background:#EEE;padding:0.1em 0.3em;}</style>
+<h1>Forbidden</h1>
+<h2>Query: <code>%s</code> <code>%s</code> <code>%s</code></h2>
+<h2>Resolved path: <code>%s</code></h2>
+<ul>
+<li><code>%s</code>: <code>%s</code></li>
+</ul></body>
+<!doctype html><html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<h1>Error: %d %s</h1>
+</body>
+</html>
+Bad Request
+Not Found
+Internal server error
+text/plain
+.html
+Content-Length: %ld
+<h1>Query: <code>%s</code> <code>%s</code> <code>%s</code></h1>
+<h1>Resolved path: <code>%s</code></h1>
+<li><a href="%s">%s</a></li>
+<li><a href="%s/%s">%s</a></li>
+HTTP/1.0
+HTTP/1.1
+content-length
+flag.txt
+error
+:*3$"
+GCC: (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0
+crtstuff.c
+deregister_tm_clones
+__do_global_dtors_aux
+completed.8061
+__do_global_dtors_aux_fini_array_entry
+frame_dummy
+__frame_dummy_init_array_entry
+server.c
+__FRAME_END__
+__init_array_end
+_DYNAMIC
+__init_array_start
+__GNU_EH_FRAME_HDR
+_GLOBAL_OFFSET_TABLE_
+__libc_csu_fini
+free@@GLIBC_2.2.5
+strcasecmp@@GLIBC_2.2.5
+strncpy@@GLIBC_2.2.5
+strncmp@@GLIBC_2.2.5
+strcpy@@GLIBC_2.2.5
+puts@@GLIBC_2.2.5
+fread@@GLIBC_2.2.5
+stdin@@GLIBC_2.2.5
+print_error
+take_until_char
+malloc_str
+_edata
+debug_handler
+strlen@@GLIBC_2.2.5
+printf@@GLIBC_2.2.5
+close@@GLIBC_2.2.5
+closedir@@GLIBC_2.2.5
+__libc_start_main@@GLIBC_2.2.5
+take_until_newline
+_setjmp@@GLIBC_2.2.5
+__data_start
+strcmp@@GLIBC_2.2.5
+__gmon_start__
+strtol@@GLIBC_2.2.5
+__dso_handle
+memcpy@@GLIBC_2.14
+_IO_stdin_used
+malloc_str_len
+gets@@GLIBC_2.2.5
+readdir@@GLIBC_2.2.5
+fileserv_handler
+__libc_csu_init
+malloc@@GLIBC_2.2.5
+__fxstat@@GLIBC_2.2.5
+_dl_relocate_static_pie
+resolve_path
+sendfile@@GLIBC_2.2.5
+realloc@@GLIBC_2.2.5
+__bss_start
+main
+longjmp@@GLIBC_2.2.5
+ends_with
+open@@GLIBC_2.2.5
+__fstat
+fdopendir@@GLIBC_2.4
+exit@@GLIBC_2.2.5
+__TMC_END__
+strstr@@GLIBC_2.2.5
+.symtab
+.strtab
+.shstrtab
+.interp
+.note.gnu.property
+.note.gnu.build-id
+.note.ABI-tag
+.gnu.hash
+.dynsym
+.dynstr
+.gnu.version
+.gnu.version_r
+.rela.dyn
+.rela.plt
+.init
+.plt.sec
+.text
+.fini
+.rodata
+.eh_frame_hdr
+.eh_frame
+.init_array
+.fini_array
+.dynamic
+.got
+.got.plt
+.data
+.bss
+.comment

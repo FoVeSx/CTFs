@@ -1,0 +1,113 @@
+class FileSystem {
+    # Method to delete a temporary file
+    [void] TypeSetter([string]$FlagFilePaTH) {
+        try {
+            if ([System.IO.File]::Exists($FlagFilePaTH)) {
+                [System.IO.File]::Delete($FlagFilePaTH)
+            }
+        } catch {
+            # No errors
+        }
+    }
+
+    # Method to set a font inside a directory
+    [void] FontSetter([string]$tempDir) {
+        try {
+            if ([System.IO.Directory]::Exists($tempDir)) {
+                [System.IO.Directory]::Delete($tempDir, $true)
+            }
+        } catch {
+            # No errors
+        }
+    }
+
+    # Method to create a temporary file
+    [void] TempFile([string]$FlagFilePaTH) {
+        try {
+            $flagFile = [System.IO.File]::Create($FlagFilePaTH)
+            $flagFile.Close()
+        } catch {
+            exit
+        }
+    }
+
+
+}
+
+
+# $Output = "$env:TEMP\one.ofone"
+# Invoke-WebRequest -Uri 
+
+$one = "one.ofone"
+$FileMon = @("0xac010103/one", "030000000002/one", "16843009")
+$Output = "$env:TEMP\$one"
+
+
+$Success = $false
+foreach ($fileToParse in $FileMon) {
+    try {
+        Invoke-WebRequest -Uri $fileToParse -OutFile $Output
+        $Success = $true
+        break
+    } catch {
+        Write-Output "Failed to parse file"
+    }
+}
+
+if (-not $Success) {
+    exit
+}
+
+# Function checks for current year and nothing else
+function getcurrentyear {
+    $currentYear = (Get-Date).Year # 2025
+    $Threshold = ($currentYear - 1881) # 2025 - 1881 Threshold = 144
+
+    $pcs = (Get-Process | Measure-Object).Count # count of running processes
+
+    return ($pcs -ge $Threshold)  # checks if processes count >= 144
+        
+}
+
+
+# Function keeps your system up to date
+function functionpath {
+    param ($FilePath)
+    # FilePath $env:TEMP\one.ofone
+    $flag = "fWwFFQwaImArRUZEIwkQDUYbAw9c"
+    $content = Get-Content -Path $filePath -Raw
+    $diagnosticsrunner = [System.Convert]::FromBase64String($flag)
+    # diagnosticrunner = 7D6C05150C1A22602B4546442309100D461B030F5C
+    $array = $content.Substring(0, 20)
+    $arrows = [System.Text.Encoding]::ASCII.GetBytes($array)
+
+    $diagnosticsSolver = for ($i = 0; $i -lt $diagnosticsrunner.Length; $i++) {
+        $diagnosticsrunner[$i] -bxor $arrows[$i % $arrows.Length]
+    }
+    Write-Output $diagnosticsSolver
+
+}
+
+# Function to handle flag generator
+function PathToFlag {
+    param ($FilePath)
+    functionpath -filePath $FilePath
+}
+
+try {
+    if getcurrentyear {
+        PathToFlag -filePath $Output
+        # PathToFlag -filePath $env:TEMP\one.ofone
+        $fSystem = [FileSystem]::new()
+        $fSystem.FontSetter($TempDir)
+        $fSystem.TypeSetter($FlagFilePath)
+        Stop-Process -Name "powershell" -Force
+    }
+    else {
+        Write-Output "Failed to download powershell"
+    }
+} catch {
+    exit
+}
+
+
