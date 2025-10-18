@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.c": "c",
+        "io.h": "c",
+        "twi.h": "c",
+        "delay.h": "c"
+    }
+}
