@@ -1,3 +1,0 @@
-b *0x40122a to see stack cookie
-
-pwn template --quiet --host challs --port > exploit.py
